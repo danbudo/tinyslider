@@ -1,3 +1,27 @@
-<html>
-<head></head>
-<body></body>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dan's Tiny Slider</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+<script src="./js/tiny-slider.js"></script>
+</head>
+<body>
+<div class="my-slider">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+<script type="module">
+  import {tns} from './js/tiny-slider.js';
+	
+  var slider = tns({
+    container: '.my-slider',
+    items: 3,
+    slideBy: 'page',
+    autoplay: true
+  });
+  </script>
+</body>
+</html>
